@@ -16,7 +16,7 @@ public class MealTime {
 	
 	private String timeOfDay;
 	
-	@OneToMany(mappedBy = "mealtime")
+	@OneToMany(mappedBy = "mealTime")
 	private Set<MenuItem> menuItemSet;
 	
 	public Set<MenuItem> getMenuItemSet() {
