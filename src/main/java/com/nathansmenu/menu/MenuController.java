@@ -28,4 +28,9 @@ public class MenuController {
 		return "mealsmenu";
 	}
 	
+	@RequestMapping("/ingredients")
+	public String fetchIngredients(@RequestParam("id") long id, Model model) {
+		model.addAttribute(menuItemRepo.findOne(id));
+		return "ingredients";
+	}
 }

@@ -28,7 +28,7 @@ public class Populator implements CommandLineRunner {
 	mealTimeRepo.save(snack);
 	
 	MenuItem eggSandwich = new MenuItem("Egg Sandwich", breakfast, "egg, bread", "delicious, easy to eat on the go");
-	MenuItem eggOverGreens = new MenuItem("Egg Over Greens", breakfast, "egg cooked over-easy, laid over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day");
+	MenuItem eggOverGreens = new MenuItem("Egg over a bed of Greens", breakfast, "egg cooked over-easy, laid over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day");
 	MenuItem leftoverPizza = new MenuItem("Leftover Pizza", lunch, "bread, cheese, veggies", "eat cold, eat on the go, happy belly");
 	MenuItem tunaSaladSalad = new MenuItem("Tuna Salad Salad", lunch, "laid over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day");
 	MenuItem salmonAndSides = new MenuItem("Salmon and Sides", dinner, "salmon, baked sweet potato, and string breans", "tasty, healthy, and satisfying!");

@@ -8,6 +8,7 @@
 <div th:each="currentMenuItems: ${mealTime.menuItemSet}">
 	<h3><a th:href="@{/ingredients(id=${currentMenuItems.id})}" 
 			th:text="${currentMenuItems.mealName}"></a></h3>
+	<p th:text="${currentMenuItems.description}"></p>
 </div>
 
 </body>
