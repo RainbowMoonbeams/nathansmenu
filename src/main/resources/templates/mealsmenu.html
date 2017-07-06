@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search for Meals</title>
+</head>
+<body>
+<h1>What are you in the mood for?</h1>
+<div th:each="currentMenuIems: ${mealTime.menuItemSet}">
+	<h3><a th:href="@{/ingredients(id=${currentMenuItems.id})}" 
+			th:text="${currentMenuItems.mealName}"></a></h3>
+</div>
+
+</body>
+</html>
