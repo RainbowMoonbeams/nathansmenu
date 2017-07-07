@@ -6,7 +6,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet"></link>
 </head>
 <body>
+<header>
 	<h1>What are you in the mood for?</h1>
+</header>
 	<div class="meal-time">
 		<div th:each="currentMenuItems: ${mealTime.menuItemSet}">
 			<h3><a th:href="@{/ingredients(id=${currentMenuItems.id})}" 

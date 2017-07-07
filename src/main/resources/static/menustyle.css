@@ -10,6 +10,18 @@ body {
 	border: 2px solid;
 	border-color: burlywood;
 }
+header {
+	background-color: blanchedalmond;
+	border: 2px solid;
+	border-color: burlywood;
+	margin-bottom: 30px;
+}
+footer {
+	background-color: blanchedalmond;
+	border: 2px solid;
+	border-color: burlywood;
+	margin-top: 30px;
+}
 h1 {
 	font-family: 'Lobster', cursive;
 }

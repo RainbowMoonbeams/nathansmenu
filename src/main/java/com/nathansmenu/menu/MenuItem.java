@@ -1,9 +1,12 @@
 package com.nathansmenu.menu;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -23,6 +26,9 @@ public class MenuItem {
 	
 	@ManyToOne
 	private MealTime mealTime;
+	
+	@ManyToMany
+	private Set<Tag> tagSet;
 
 	public Long getId() {
 		return id;
