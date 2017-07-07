@@ -1,7 +1,9 @@
 body {
 	background: cornsilk;
 	margin: auto;
-	
+	width: 60%;
+	padding: auto;
+	text-align: center;
 }
 .meal-time {
 	background-color: blanchedalmond;
