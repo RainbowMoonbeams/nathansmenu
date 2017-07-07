@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Search for Meals</title>
+	<title>Search for Meals</title>
+	<link rel="stylesheet" type="text/css" href="menustyle.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet"></link>
 </head>
 <body>
-<h1>What are you in the mood for?</h1>
-<div th:each="currentMenuItems: ${mealTime.menuItemSet}">
-	<h3><a th:href="@{/ingredients(id=${currentMenuItems.id})}" 
-			th:text="${currentMenuItems.mealName}"></a></h3>
-	<p th:text="${currentMenuItems.description}"></p>
-</div>
-
-</body>
-</html>
+	<h1>What are you in the mood for?</h1>
+	<div class="meal-time">
+		<div th:each="currentMenuItems: ${mealTime.menuItemSet}">
+			<h3><a th:href="@{/ingredients(id=${currentMenuItems.id})}" 
+				th:text="${currentMenuItems.mealName}"></a></h3>
+				<p th:text="${currentMenuItems.description}"></p>
+			</div>
+		</div>
+	</body>
+	</html>

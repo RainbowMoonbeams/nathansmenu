@@ -32,14 +32,21 @@ public class Populator implements CommandLineRunner {
 	MenuItem leftoverPizza = new MenuItem("Leftover Pizza", lunch, "bread, cheese, veggies", "eat cold, eat on the go, happy belly");
 	MenuItem tunaSaladSalad = new MenuItem("Tuna Salad Salad", lunch, "laid over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day");
 	MenuItem salmonAndSides = new MenuItem("Salmon and Sides", dinner, "salmon, baked sweet potato, and string breans", "tasty, healthy, and satisfying!");
+	MenuItem gnocchiWithSauce = new MenuItem("Gnocchi with Sauce & Brussel Sprouts", dinner, "perfectly poached gnocchi with a home made Roasted Red Pepper & butternut squash sauce, with a side of roasted brussel sprouts", "healthy comfort food at its best!");
 	MenuItem olivesAndCrackers = new MenuItem("Olives & Crackers", snack, "marinated olives & garlic, crispy water crackers, and artisan cheese", "a delectible and light snack");
+	MenuItem beetsAndGoatCheese = new MenuItem("Beets and Goat Cheese", snack, "pickled beets and a creamy & crumbly goat cheese drizled with honey and balsalmic vinaigrette, with crispy water crackers", "a tangy, light snack");
+	
+	
 	
 	menuItemRepo.save(eggSandwich);
 	menuItemRepo.save(eggOverGreens);
 	menuItemRepo.save(leftoverPizza);
 	menuItemRepo.save(tunaSaladSalad);
 	menuItemRepo.save(salmonAndSides);
+	menuItemRepo.save(gnocchiWithSauce);
 	menuItemRepo.save(olivesAndCrackers);
+	menuItemRepo.save(beetsAndGoatCheese);
+	
 	
 	}
 

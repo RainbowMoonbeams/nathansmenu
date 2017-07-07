@@ -1,0 +1,17 @@
+body {
+	background: cornsilk;
+	margin: auto;
+	
+}
+.meal-time {
+	background-color: blanchedalmond;
+	border: 2px solid;
+	border-color: burlywood;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+}
+h3, p {
+	font-family: 'Playfair Display', serif;
+}
+

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>It's Mealtime!</title>
+	<title>It's Mealtime!</title>
+	<link rel="stylesheet" type="text/css" href="menustyle.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet"></link>
 </head>
 <body>
-<h1>Time to eat:</h1>
-<div>
-	<h3 th:each="currentMealTime: ${mealTimeAttribute}">
-	<a th:href="@{/mealsmenu(id=${currentMealTime.id})}"
-	th:text="${currentMealTime}"></a></h3>
-</div>
-</body>
-</html>
+	<h1>Time to eat:</h1>
+
+	<div class="meal-time">
+		<div>
+			<h3 th:each="currentMealTime: ${mealTimeAttribute}">
+				<a th:href="@{/mealsmenu(id=${currentMealTime.id})}"
+				th:text="${currentMealTime}"></a></h3>
+			</div>
+		</div>
+	</body>
+	</html>

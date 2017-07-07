@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Meal Ingredients</title>
+	<title>Meal Ingredients</title>
+	<link rel="stylesheet" type="text/css" href="menustyle.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet"></link>
 </head>
 <body>
-
-	<div>
-	<h1>Ingredients:</h1>
-		<p th:text="${menuItem.ingredients}"></p>
+	<div class="meal-time">
+		<div>
+			<h1>Ingredients:</h1>
+			<p th:text="${menuItem.ingredients}"></p>
+		</div>
 	</div>
 </body>
 </html>
