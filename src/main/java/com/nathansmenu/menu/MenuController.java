@@ -37,4 +37,15 @@ public class MenuController {
 		return "ingredients";
 	}
 	
+	@RequestMapping("/tag")
+	public String fetchTag(@RequestParam("id") long id, Model model) {
+		model.addAttribute(tagRepo.findOne(id));
+		return "tag";
+	}
+	
+	@RequestMapping("/tags")
+	public String fetchTags(Model model) {
+		model.addAttribute(tagRepo.findAll());
+	return "tags";
+	}
 }

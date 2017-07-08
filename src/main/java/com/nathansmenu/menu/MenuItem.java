@@ -32,10 +32,10 @@ public class MenuItem {
 	private MealTime mealTime;
 	
 	@ManyToMany
-	private Set<Tag> tag;
+	private Set<Tag> tags;
 	
-	public Set<Tag> getTag(){
-		return tag;
+	public Set<Tag> getTags(){
+		return tags;
 	}
 
 	public Long getId() {
@@ -59,12 +59,12 @@ public class MenuItem {
 		this.mealTime = mealTime;
 		this.ingredients = ingredients;
 		this.description = description;
-		this.tag = new HashSet<>(Arrays.asList(tag));
+		this.tags = new HashSet<>(Arrays.asList(tag));
 	}
 		
 	@Override
 	public String toString() {
-		return mealName + mealTime + ingredients + description + tag;
+		return mealName + mealTime + ingredients + description + tags;
 	}
 
 	public MenuItem() {

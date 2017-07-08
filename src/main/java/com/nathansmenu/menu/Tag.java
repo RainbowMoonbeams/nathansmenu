@@ -17,7 +17,7 @@ public class Tag {
 	private String tag;
 	private String name;
 
-	@ManyToMany(mappedBy = "tag")
+	@ManyToMany(mappedBy = "tags")
 	private Set<MenuItem> menuItemTag;
 
 	public Long getId() {
@@ -33,6 +33,7 @@ public class Tag {
 	}
 
 	public Tag(String tag) {
+		this.tag = tag;
 	}
 
 	public Set<MenuItem> getMenuItemTag() {
@@ -54,10 +55,6 @@ public class Tag {
 	@Override
 	public String toString() {
 		return tag;
-	}
-
-	public Tag(Long id, String tag) {
-		this.tag = tag;
 	}
 
 	public Tag() {

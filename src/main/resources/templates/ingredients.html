@@ -6,38 +6,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet"></link>
 </head>
 <body>
-<header>
-	<h1>Ingredients:</h1>
-</header>
+	<header>
+		<h1>Ingredients:</h1>
+	</header>
 	<div class="meal-time">
 		<div>
 			<p th:text="${menuItem.ingredients}"></p>
-			<!-- from Mickey
-		<ul id="liststyle1">
-        	<p1>Taco Tags</p1>
-            <li th:each="tag: ${tacoJoint.tags}"><a th:text="${tag.name}"></a></li>
-        </ul> 
-         -->
-			<!-- from Brian's fishes 
+
 			<form>
-		<ul>
-			<li th:each="food: ${foods}"><span th:text="${food.name}" />
-			<button th:formaction="@{/foods/delete/{foodId}(foodId=${food.id})}">delete</button></li>
-		</ul>
-	</form>
-			 -->
-			<p th:text="${menuItem.tag}"><a th:text="${tag.name}"></a></p>
-			<form>
-			<ul>
-				<li th:each="tag: ${menuItem.tag}"><span th:text="${tag.name}" />
-				<button th:formaction="@{/tag/delete/{tagId}(tagId=${tag.id})}">delete</button></li>	
-			</ul>
-			</form>
+			<h4>Tags:</h4>
+				<ul>
+					<li th:each="tag: ${menuItem.tags}"><span th:text="${tag}"></span>
+						<button th:formaction="@{/tag/delete/{tagId}(tagId=${tag.id})}">delete</button></li>	
+					</ul>
+				</form>
+			</div>
 		</div>
-	</div>
-	<footer>
-		<p>All meal ideas are Nathan's</p>
-		<p>&copy;2017 MEAGHANATHAN</p>
-	</footer>
-</body>
-</html>
+		<footer>
+			<p>All meal ideas are Nathan's</p>
+			<p>&copy;2017 MEAGHANATHAN</p>
+		</footer>
+	</body>
+	</html>
