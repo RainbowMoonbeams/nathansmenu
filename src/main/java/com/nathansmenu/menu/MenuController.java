@@ -33,4 +33,5 @@ public class MenuController {
 		model.addAttribute(menuItemRepo.findOne(id));
 		return "ingredients";
 	}
+	
 }

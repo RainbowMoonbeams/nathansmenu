@@ -26,6 +26,13 @@ public class Tag {
 	public String getTagWord() {
 		return tagWord;
 	}
+	
+	public Tag(String tagSet) {
+	}
+	
+	public Set<MenuItem> getMenuItemTag() {
+		return menuItemTag;
+	}
 
 	public void setId(Long id) {
 		this.id = id;
@@ -46,7 +53,6 @@ public class Tag {
 
 	public Tag() {
 	}
-	
-	
+
 	
 }
