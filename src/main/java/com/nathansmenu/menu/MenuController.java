@@ -16,6 +16,9 @@ public class MenuController {
 	@Resource
 	private MenuItemRepository menuItemRepo;
 	
+	@Resource
+	private TagRepository tagRepo;
+	
 	@RequestMapping("/mealtime")
 	public String fetchMealTime(Model model) {
 		model.addAttribute("mealTimeAttribute", mealTimeRepo.findAll());

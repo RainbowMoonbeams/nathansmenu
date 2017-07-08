@@ -13,23 +13,28 @@ public class Tag {
 	@Id
 	@GeneratedValue
 	private Long id;
-	
-	private String tagWord;
-	
-	@ManyToMany(mappedBy = "tagSet")
+
+	private String tag;
+	private String name;
+
+	@ManyToMany(mappedBy = "tag")
 	private Set<MenuItem> menuItemTag;
 
 	public Long getId() {
 		return id;
 	}
 
-	public String getTagWord() {
-		return tagWord;
+	public String getTag() {
+		return tag;
 	}
-	
-	public Tag(String tagSet) {
+
+	public String getName() {
+		return name;
 	}
-	
+
+	public Tag(String tag) {
+	}
+
 	public Set<MenuItem> getMenuItemTag() {
 		return menuItemTag;
 	}
@@ -38,21 +43,24 @@ public class Tag {
 		this.id = id;
 	}
 
-	public void setTagWord(String tagWord) {
-		this.tagWord = tagWord;
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+
+	public void setName() {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return tagWord;
+		return tag;
 	}
 
-	public Tag(Long id, String tagWord) {
-		this.tagWord = tagWord;
+	public Tag(Long id, String tag) {
+		this.tag = tag;
 	}
 
 	public Tag() {
 	}
 
-	
 }

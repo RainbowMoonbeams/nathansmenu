@@ -12,7 +12,27 @@
 	<div class="meal-time">
 		<div>
 			<p th:text="${menuItem.ingredients}"></p>
-			<!-- <p th:text="${menuItem.tagSet}"></p> -->
+			<!-- from Mickey
+		<ul id="liststyle1">
+        	<p1>Taco Tags</p1>
+            <li th:each="tag: ${tacoJoint.tags}"><a th:text="${tag.name}"></a></li>
+        </ul> 
+         -->
+			<!-- from Brian's fishes 
+			<form>
+		<ul>
+			<li th:each="food: ${foods}"><span th:text="${food.name}" />
+			<button th:formaction="@{/foods/delete/{foodId}(foodId=${food.id})}">delete</button></li>
+		</ul>
+	</form>
+			 -->
+			<p th:text="${menuItem.tag}"><a th:text="${tag.name}"></a></p>
+			<form>
+			<ul>
+				<li th:each="tag: ${menuItem.tag}"><span th:text="${tag.name}" />
+				<button th:formaction="@{/tag/delete/{tagId}(tagId=${tag.id})}">delete</button></li>	
+			</ul>
+			</form>
 		</div>
 	</div>
 	<footer>
