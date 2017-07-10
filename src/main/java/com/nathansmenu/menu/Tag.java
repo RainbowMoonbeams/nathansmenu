@@ -60,4 +60,8 @@ public class Tag {
 	public Tag() {
 	}
 
+	public void remove(Tag toDelete) {
+		
+	}
+
 }

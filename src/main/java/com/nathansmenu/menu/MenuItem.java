@@ -70,6 +70,10 @@ public class MenuItem {
 	public MenuItem() {
 
 	}
+
+	public void remove(Tag tagToRemove) {
+		tags.remove(tagToRemove);
+	}
 	
 	
 	

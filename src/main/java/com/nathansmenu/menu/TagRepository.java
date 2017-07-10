@@ -8,4 +8,9 @@ public interface TagRepository extends CrudRepository<Tag, Long> {
 
 	Tag findByNameContains(String substring);
 
+//	void save(MenuItem tag);
+//
+//	void remove(MenuItem tag);
+//
+//	void add(MenuItem tag);
 }
