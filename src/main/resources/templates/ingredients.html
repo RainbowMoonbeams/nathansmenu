@@ -12,19 +12,18 @@
 	<div class="meal-time">
 		<div>
 			<p th:text="${menuItem.ingredients}"></p>
-		<!-- 
-			<form th:action="@{/addTag}">
-				<input name="newTag" type="hidden" th:value="${tag.id}" />
-				<label for="newTag">Add a Tag:</label>
-				<input name="name" type="text" id="newTag" />
-				<input type="submit" value="Add Tag" />
+
+			<form method="POST">
+				<input name="id" type="hidden" th:value="${menuItem.id}" />
+				<label>Add a Tag:<input name="name" type="text" /></label>
+				<button th:formaction="@{/tag/add}">Submit</button>
 			</form>
-			 -->
+			
 			<form>
 				<h4>Tags:</h4>
 				<input type="hidden" name="menuItemId" th:value="${menuItem.id}"></input>
 				<ul>
-					<li th:each="tag: ${menuItem.tags}"><span th:text="${tag}"></span>
+					<li th:each="tag: ${menuItem.tags}"><span th:text="${tag.name}"></span>
 						<button name="tagId" th:value="${tag.id}" th:formaction="@{/tag/delete}">delete</button></li>
 					</ul>
 				</form>

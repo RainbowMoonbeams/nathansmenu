@@ -74,6 +74,10 @@ public class MenuItem {
 	public void remove(Tag tagToRemove) {
 		tags.remove(tagToRemove);
 	}
+
+	public void add(Tag tag) {
+		tags.add(tag);
+	}
 	
 	
 	

@@ -54,7 +54,17 @@ public class MenuController {
 		tagRepo.delete(toDelete);
 		return "redirect:/ingredients?id=" + menuItemId;
 	}
-	
+
+	@RequestMapping("/tag/add")
+	public String createTag(@RequestParam(value = "id") long id, String name) {
+		Tag tag = new Tag(name);
+		tagRepo.save(tag);
+		MenuItem items = menuItemRepo.findOne(id);
+		items.add(tag);
+		menuItemRepo.save(items);
+		return "redirect:/ingredients?id=" + id;
+
+	}
 
 	@RequestMapping("/tags")
 	public String fetchTags(Model model) {

@@ -32,8 +32,8 @@ public class Tag {
 		return name;
 	}
 
-	public Tag(String tag) {
-		this.tag = tag;
+	public Tag(String name) {
+		this.name = name;
 	}
 
 	public Set<MenuItem> getMenuItemTag() {
