@@ -1,3 +1,16 @@
+a:link {
+	
+}
+a:visited {
+	
+}
+a:hover {
+	
+}
+a:active {
+    background-color: #4CAF50;
+    color: white;
+}
 body {
 	background: cornsilk;
 	margin: auto;
@@ -7,11 +20,6 @@ body {
 }
 body ul {
 	list-style: none;
-}
-.meal-time {
-	background-color: blanchedalmond;
-	border: 2px solid;
-	border-color: burlywood;
 }
 header {
 	background-color: blanchedalmond;
@@ -25,10 +33,27 @@ footer {
 	border-color: burlywood;
 	margin-top: 30px;
 }
-h1, h4 {
+h1, h4, .nav-menu{
 	font-family: 'Lobster', cursive;
 }
 h3, p, span {
 	font-family: 'Playfair Display', serif;
+}
+.meal-time {
+	background-color: blanchedalmond;
+	border: 2px solid;
+	border-color: burlywood;
+}
+.nav-menu {
+    display: block;
+    width: auto;
+    background-color: burlywood;   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
 }
 
