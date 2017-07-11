@@ -46,10 +46,10 @@ public class Populator implements CommandLineRunner {
 	tagRepo.save(eatOnTheGo);
 	tagRepo.save(satisfying);
 	
-	MenuItem eggSandwich = new MenuItem("Egg Sandwich", breakfast, "egg, bread", "delicious, easy to eat on the go", eatOnTheGo, satisfying);
+	MenuItem eggSandwich = new MenuItem("Egg Sandwich", breakfast, "ooey-gooey soft yolk egg cooked over-easy, placed on a warm, toasted artisan roll, fresh out of the toaster, slathered with melty butter", "delicious, easy to eat on the go", eatOnTheGo, satisfying);
 	MenuItem eggOverGreens = new MenuItem("Egg over a bed of Greens", breakfast, "egg cooked over-easy, laid over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day", savory, satisfying);
-	MenuItem leftoverPizza = new MenuItem("Leftover Pizza", lunch, "bread, cheese, veggies", "eat cold, eat on the go, happy belly", eatOnTheGo);
-	MenuItem tunaSaladSalad = new MenuItem("Tuna Salad Salad", lunch, "laid over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day", satisfying);
+	MenuItem leftoverPizza = new MenuItem("Leftover Pizza", lunch, "cold or room temperature pizza from the night before on your favorite type of crust, with your favorite toppings and covered with your favoritee cheese", "eat cold, eat on the go, happy belly, no plates needed!", eatOnTheGo);
+	MenuItem tunaSaladSalad = new MenuItem("Tuna Salad Salad", lunch, "two heaping scoops of tuna salad made your favorite way over a bed of spring mix, topped with capers, a dollop of mayo and a spinkle of freshly ground black pepper", "delectible, feel like a queen for the day", satisfying);
 	MenuItem salmonAndSides = new MenuItem("Salmon and Sides", dinner, "salmon, baked sweet potato, and string breans", "tasty, healthy, and satisfying!", savory, satisfying);
 	MenuItem gnocchiWithSauce = new MenuItem("Gnocchi with Sauce & Brussel Sprouts", dinner, "perfectly poached gnocchi with a home made Roasted Red Pepper & butternut squash sauce, with a side of roasted brussel sprouts", "healthy comfort food at its best!", savory, satisfying);
 	MenuItem olivesAndCrackers = new MenuItem("Olives & Crackers", snack, "marinated olives & garlic, crispy water crackers, and artisan cheese", "a delectible and light snack", light);
