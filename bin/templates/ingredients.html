@@ -7,6 +7,12 @@
 </head>
 <body>
 	<header>
+	<ul class="nav-menu">
+			<li><a href="default.asp"><h2>Home</h2></a></li>
+			<li><a href="news.asp"><h2>News</h2></a></li>
+			<li><a href="contact.asp"><h2>Contact</h2></a></li>
+			<li><a href="about.asp"><h2>About</h2></a></li>
+		</ul>
 		<h1>Ingredients:</h1>
 	</header>
 	<div class="meal-time">
@@ -15,12 +21,12 @@
 
 			<form method="POST">
 				<input name="id" type="hidden" th:value="${menuItem.id}" />
-				<label>Add a Tag:<input name="name" type="text" /></label>
+				<label>Add a Tag: <input name="name" type="text" /></label>
 				<button th:formaction="@{/tag/add}">Submit</button>
 			</form>
 			
 			<form>
-				<h4>Tags:</h4>
+				<h2>Tags:</h2>
 				<input type="hidden" name="menuItemId" th:value="${menuItem.id}"></input>
 				<ul>
 					<li th:each="tag: ${menuItem.tags}"><span th:text="${tag.name}"></span>

@@ -33,10 +33,10 @@ footer {
 	border-color: burlywood;
 	margin-top: 30px;
 }
-h1, h4, .nav-menu{
+h1, h2, h4, .nav-menu{
 	font-family: 'Lobster', cursive;
 }
-h3, p, span {
+h3, p, span, label, button {
 	font-family: 'Playfair Display', serif;
 }
 .meal-time {
